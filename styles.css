@@ -1,0 +1,290 @@
+/*font-family: 'Fjalla One', sans-serif;
+font-family: 'Nunito', sans-serif;*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    z-index: 10;
+    background-color: #fff;
+    top: 0px;
+    justify-content: space-between;
+    height: 5rem;
+    /* 20px x 5 = 100px */
+    padding: 0.5rem 4rem;
+    border-bottom: 8px solid #282828;
+}
+
+.nav-item {
+    display: inline-flex;
+    padding: 1.5rem 1rem;
+}
+
+.nav-links {
+    color: #282828;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.nav-links:hover {
+    color: #828282;
+}
+
+.nav-links:active {
+    color: #828282;
+    text-decoration: underline;
+}
+
+.nav-logo {
+    height: 100%;
+}
+
+/* Hero section */
+.hero-section {
+    margin-top: 0;
+    height: 100vh;
+    background-image: url("images/edho-pratama-T6fDN60bMWY-unsplash.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 45vh;
+    left: 1.25rem;
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 7rem;
+    color: #282828;
+    text-shadow: rgba(192, 192, 192, 0.25) 3px 3px;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.hero-text span {
+    font-style: italic;
+}
+
+.cta a,
+input[value="Get in touch!"] {
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cta a:hover,
+.cta a:active,
+.cta a:visited {
+    color: #282828;
+}
+
+.cta {
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #FBD802;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    cursor: pointer;
+    transition: all 250ms;
+    touch-action: manipulation;
+}
+
+.cta:hover {
+    background-color: #F6C41B;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-1px);
+}
+
+.cta:focus {
+    border: 1px solid #828282;
+}
+
+.cta:active {
+    background-color: #FFEC95;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+/*Section General Styles*/
+
+section,
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.section-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+
+.section-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+/* Company and contact section common styles*/
+
+#company,
+#contact {
+    background-color: #282828;
+    color: #fff;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/*Company styles */
+
+#company {
+    height: 25rem;
+}
+
+#company .section-container {
+    text-align: left;
+    align-items: center;
+    height: 100%;
+}
+
+#company .section-item {
+    /* border: 1px solid red; */
+    padding: 2rem;
+}
+
+#company p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+.emphasis {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.15rem;
+}
+
+/*Services - About Us section common styles*/
+
+#services .section-container,
+#about-us .section-container {
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+#services article,
+#about-us article {
+    width: 20%;
+    min-width: 14rem;
+    padding: 2rem;
+}
+
+/* Services section */
+
+#services i {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#services i:hover {
+    text-shadow: 2px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.fa-compass-drafting:hover {
+    color: #0c788e;
+}
+
+.fa-wand-magic-sparkles:hover {
+    color: #9434c8;
+}
+
+.fa-palette:hover {
+    color: #e17135;
+}
+
+.fa-bullseye:hover {
+    color: #ca0909;
+}
+
+/* Team Section */
+
+.staff img {
+    width: 100%;
+}
+
+.staff h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* Contact Section */
+
+#contact {
+    height: 35rem;
+    position: relative;
+    bottom: 0px;
+}
+
+#contact .section-item {
+    width: 50%;
+}
+
+#contact-form {
+    text-align: left;
+}
+
+.form-input {
+    padding: 0.5rem 0;
+}
+
+.form-input input {
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    width: 20rem;
+}
+
+.form-input textarea {
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+}
+
+#social {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#social .fa-brands {
+    font-size: 3rem;
+    color: #fff;
+}
